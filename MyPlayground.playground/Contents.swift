@@ -1,11 +1,11 @@
-import UIKit
+import Foundation
 
-let number:Double = 654321
-let seconds:Double
-let minutes:Double
-let hours:Double
+let number = 654321
+let seconds: Int
+let minutes: Double
+let hours: Double
 
 seconds = number
-minutes = number / 60
-hours = minutes / 60
-print("\(number) это \(seconds) сукунд, \(minutes) минут, \(hours) часов")
+minutes = Double(number) / 60
+hours = Double(minutes) / 60
+print("\(number) это \(seconds) секунд, \(minutes) минут, \(hours) часов")
